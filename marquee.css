@@ -1,0 +1,39 @@
+/* annimation marquee */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* annimation bouton starligth */
+  body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* min-height: 100vh; */
+    background: #050801;
+  }
+.text-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden;
+  background: #003049;
+}
+h1 {
+  font-size: 48px;
+  text-transform: uppercase;
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: #fff;
+  white-space: nowrap;
+  padding: 0 8rem;
+  letter-spacing: 1px;
+  animation: move-rtl 6000ms linear infinite;
+}
+@keyframes move-rtl {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
